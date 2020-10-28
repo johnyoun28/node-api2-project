@@ -1,9 +1,9 @@
 const express = require('express')
 const server = express()
-const blogRouter = require('./blogRouter')
+const postRouter = require('./postRouter')
 
 server.use(express.json())
-server.use(blogRouter)
+server.use(postRouter)
 
 server.get('/', (req,res) => {
     res.send(`<h2>Hello World</h2>`)
